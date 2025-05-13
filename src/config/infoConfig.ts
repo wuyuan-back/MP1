@@ -11,7 +11,7 @@ export const email = 'quanharry499@gmail.com'
 export const githubUsername = 'wuyuan-back'
 
 // about page
-export const aboutMeHeadline = 'Who Are You and Why Should I Care?'
+export const aboutMeHeadline = '我是谁，来者何人'
 export const aboutParagraphs = [
   "Bonjour! My name is Wilfred Wu. I'm from Yunan and a student of XMU. I’ve been learning mediclal since 2024.",
   'Currently I am working on studying communication engineering',

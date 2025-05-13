@@ -13,7 +13,7 @@ export type EducationItemType = {
   
   export const educationList: Array<EducationItemType> = [
     {
-      school: 'Xiamen University',
+      school: 'œ√√≈¥Û—ß',
       major: 'clinical medical',
       logo: 'college',
       start: '2024',
