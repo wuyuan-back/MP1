@@ -3,49 +3,72 @@ title: 如何制作个人网站——根据bilibili桐叶大人的视频文字�
 description: 总结
 date: '2025-05-13'
 ---
+
 # 为何不用wix 和 Webflow
+
 ## Wix 模块化界面
-## 优点：方便，直观
-## 缺点：限制发挥，收费
+
+### 优点：方便，直观
+
+### 缺点：限制发挥，收费
+
 ## Next.js 全栈
- 快速实战，建立个人网站
-1，	前期准备
-	1.	Powershell 打开终端
-	2.	git --version 显示command not found 命令不存在
-	3.	pnpm –version
-	4.	ssh-T git@gihub.com  连接github 出现Hi [your name]! You've successfully authenticated 字样代表成功.Permission denided 前往github设置好ssh key 
-2.获得原始代码（derekhut）
-	1.MP1原始代码库 fork 复制至个人github账户下
-	2.点击code 复制连接
+
+快速实战，建立个人网站
+
+## 1. 前期准备
+
+1. Powershell 打开终端
+2. git --version 显示command not found 命令不存在
+3. pnpm –version
+4. ssh-T git@gihub.com  连接github 出现Hi [your name]! You've successfully authenticated 字样代表成功.Permission denided 前往github设置好ssh key 
+
+## 2. 获得原始代码（derekhut）
+
+1. MP1原始代码库 fork 复制至个人github账户下
+2. 点击code 复制连接
 3. 输入git clone [粘贴链接]
-4.开始下载
-3.安装组件依赖
-	1.pwd 确认位于MP1文件夹下
-	2.pnpm install 下载组件 此处易出现sharp库下载失败的问题，参考博客园的内容https://www.cnblogs.com/blbl-blog/p/18128940 能解决大部分问题  
-	3.出现 done in x.xs 下载完成      
-4.本地预览网站
-  	1.pnpm dev
-	2. 出现 local host:XXXX
-	3. 终端不可关闭
-	4. 输入Ctrl +c 停止运行
-5.个性化设置
-	1. 用IDE打开
-	2. Config 修改变量
-	3. 根据网页进行对照
-6.推送至github
- 	1.git status 检查修改
-  	2.git add .
-	3.git commit -m "提示词，做了什么修改"
-	4.git push origin main
-	常见问题：
-	1. 如果在git add .时出现open(.vs/MP1/FileContentIndex/***.vsidx): Permission denied,是因为windows隐藏文件巴拉巴拉... 
-	2. 解决:在VSCode里，Git->设置->选项→git仓库设置→常规中编辑gitignore文件 加入一行.vs/ 即可
-7.部署上线
-	1.Vercel 能与github 绑定
-	2.点击右上角add new project
-	3.import 你的文件夹
-	4.点击deploy 无问题之后正式上线
- Ps:设置个人域名的话，上国内网站购买后，可以在自定义域名: Settings——>Domains——>Add——>在第一行中填入自己购买的域名(或者使用申请的免费域名)——>Add Domain——>等待域名解析——>解析成功即可访问
+4. 开始下载
+
+## 3. 安装组件依赖
+
+1. pwd 确认位于MP1文件夹下
+2. pnpm install 下载组件 此处易出现sharp库下载失败的问题，参考博客园的内容https://www.cnblogs.com/blbl-blog/p/18128940 能解决大部分问题  
+3. 出现 done in x.xs 下载完成      
+
+## 4. 本地预览网站
+
+1. pnpm dev
+2. 出现 local host:XXXX
+3. 终端不可关闭
+4. 输入Ctrl +c 停止运行
+
+## 5. 个性化设置
+
+1. 用IDE打开
+2. Config 修改变量
+3. 根据网页进行对照
+
+## 6. 推送至github
+
+1. git status 检查修改
+2. git add .
+3. git commit -m "提示词，做了什么修改"
+4. git push origin main
+
+### 常见问题：
+
+1. 如果在git add .时出现open(.vs/MP1/FileContentIndex/***.vsidx): Permission denied,是因为windows隐藏文件巴拉巴拉... 
+2. 解决:在VSCode里，Git->设置->选项→git仓库设置→常规中编辑gitignore文件 加入一行.vs/ 即可
+
+## 7. 部署上线
+
+1. Vercel 能与github 绑定
+2. 点击右上角add new project
+3. import 你的文件夹
+4. 点击deploy 无问题之后正式上线
+
+## Ps:设置个人域名的话，上国内网站购买后，可以在自定义域名: Settings——>Domains——>Add——>在第一行中填入自己购买的域名(或者使用申请的免费域名)——>Add Domain——>等待域名解析——>解析成功即可访问
 
 ---
 
